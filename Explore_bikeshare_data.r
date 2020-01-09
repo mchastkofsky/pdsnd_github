@@ -25,12 +25,8 @@ qplot(x = Gender, y = Trip.Minutes,
       main = 'Do men or women take longer trips in New York?', ylab = 'Trip Duration') +
   coord_cartesian(ylim = c(0, 30))
 
-birthage <- function(birthyear){ #function to adjust birth year into age (from 2017)
-  age <- (2017-birthyear)
-  return(age)
-}
-chi$Age <- birthage(chi$Birth.Year) #convert Chicago ages
-ny$Age <- birthage(ny$Birth.Year) #convert NY ages
+chi$Age <- 2017 - chi$Birth.Year #convert Chicago ages
+ny$Age <- 2017 -ny$Birth.Year #convert NY ages
 
 by(chi$Age, chi$Gender, summary) #a quick look at age distribution between male and female riders
 
