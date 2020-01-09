@@ -1,15 +1,14 @@
-### Date created
+### R project was created on Jan 2, 2020 and README was created Jan 8, 2020
 Include the date you created this project and README file.
 
-### Project Title
+### Exploring bikeshare data with R
 Replace the Project Title
 
-### Description
+### I explored the breakdown of ride duration by gender, ride duration by age, and when people take long rides in all three cities
 Describe what your project is about and what it does
 
-### Files used
+### Explore_bikeshare_data.r is the R file, and 3 data files, wash.csv, chicago.csv, and new-york.csv
 Include the files used
 
-### Credits
+### Thanks to Udacity, Github, and Google
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
