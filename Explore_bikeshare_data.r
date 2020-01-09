@@ -1,4 +1,4 @@
-
+Bikeshare project with R programming
 ny = read.csv('new_york_city.csv')
 wash = read.csv('washington.csv')
 chi = read.csv('chicago.csv')
@@ -38,7 +38,7 @@ birthage <- function(birthyear){ #function to adjust birth year into age (from 2
 chi$Age <- birthage(chi$Birth.Year) #convert Chicago ages
 ny$Age <- birthage(ny$Birth.Year) #convert NY ages
 
-by(chi$Age, chi$Gender, summary) #a quick look at age distribution between male and female riders 
+by(chi$Age, chi$Gender, summary) #a quick look at age distribution between male and female riders
 
 ggplot(aes(x=Age, y=Trip.Minutes), data = subset(chi, !is.na(Gender))) + #plot age versus trip duration
   xlim(13, 70) +
@@ -56,7 +56,7 @@ ggplot(aes(x=Age, y=Trip.Minutes), data = subset(chi, !is.na(Gender))) + #plot a
                           labels = c("Mean", "Median", "5%", "95%"),
                           guide = "legend")
 
-by(ny$Birth.Year, ny$Gender, summary) #a quick look at age distribution between male and female riders 
+by(ny$Birth.Year, ny$Gender, summary) #a quick look at age distribution between male and female riders
 
 ggplot(aes(x=Age, y=Trip.Minutes), data = subset(ny, !is.na(Gender))) + #plot age versus trip duration
   xlim(13, 80) +
