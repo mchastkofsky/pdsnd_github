@@ -1,7 +1,7 @@
-### R project was created on Jan 2, 2020 and README was created Jan 8, 2020
+### R project was created on Jan 2, 2020 and README file was created Jan 8, 2020
 Include the date you created this project and README file.
 
-### Exploring bikeshare data with R
+### Exploring bikeshare data with R programming
 Replace the Project Title
 
 ### I explored the breakdown of ride duration by gender, ride duration by age, and when people take long rides in all three cities
